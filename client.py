@@ -71,14 +71,9 @@ top.protocol("WM_DELETE_WINDOW", on_closing)
 # --- Configuración de los sockets
 # Cambiamos los sockets a los mismos que utiliza el servidor.
 
-HOST = input('Enter host: ')
-PORT = input('Enter port: ')
-if not HOST: 
-    HOST = '127.0.0.1'
-if not PORT:
-    PORT = 8081
-else:
-    PORT = int(PORT)
+
+HOST = '127.0.0.1'
+PORT = 8081
 
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
